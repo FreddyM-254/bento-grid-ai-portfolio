@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ai-sdk/google": "^2.0.7",
+    "@convex-dev/agent": "^0.2.2",
     "convex": "^1.25.4",
     "lucide-react": "^0.539.0",
     "motion": "^12.23.12",
