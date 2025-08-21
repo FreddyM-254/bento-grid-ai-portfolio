@@ -18,7 +18,7 @@ function ChatSection() {
              <div>
                 <p>No thread created yet</p>
                  <button
-                     onCkick ={() => createThread().then(setThreadId)}
+                     onClick ={() => createThread().then(setThreadId)}
                  >
                     Create Thread
                     </button>
