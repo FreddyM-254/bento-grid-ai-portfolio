@@ -9,7 +9,7 @@ function MessageList({ threadId }) {
     );
 
 
-    if (! messageResult || messagesResult.results.length === 0 ){
+    if (! messagesResult || messagesResult.results.length === 0 ){
         return <div>No Messages found</div>
     }
 
@@ -23,15 +23,18 @@ function MessageList({ threadId }) {
                 return (
                     <div key={message._id}>
                         {
-                            isUser ? <div>You: {message.text}</div> : <div>Assistant: {message.text}</div>
+                            isUser ? (
                             
-                        }
+                            <div>You: {message.text}</div>) 
+                            :( <div>Assistant: {message.text}</div>
+                            
+            )}
                         </div>
-                )
+                );
             })
         }
     </div>
-  )
+  );
 }
 
-export default MessageList
+export default MessageList;

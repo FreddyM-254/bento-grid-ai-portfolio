@@ -8,10 +8,10 @@ import { paginationOptsValidator } from 'convex/server';
 const DEMO_USER_ID = "demo-user-123"
 
 
-const myAgent = new Agent(components.agent,{
+const myAgent = new Agent(components.agent, {
     chat: google.chat("gemini-2.0-flash"),
     instructions: "You are a helpful assistant on Freddy's portfolio website. Keep your answers concise",
-    textEmbedding: google.textEmbeddingModel('text-embedding-004')
+    textEmbedding: google.textEmbeddingModel('text-embedding-004'),
 })
 
 

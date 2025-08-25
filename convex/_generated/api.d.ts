@@ -9,6 +9,9 @@
  */
 
 import type * as demo_chat from "../demo/chat.js";
+import type * as sidbot_lib from "../sidbot/lib.js";
+import type * as sidbot_mutation from "../sidbot/mutation.js";
+import type * as users from "../users.js";
 
 import type {
   ApiFromModules,
@@ -26,6 +29,9 @@ import type {
  */
 declare const fullApi: ApiFromModules<{
   "demo/chat": typeof demo_chat;
+  "sidbot/lib": typeof sidbot_lib;
+  "sidbot/mutation": typeof sidbot_mutation;
+  users: typeof users;
 }>;
 declare const fullApiWithMounts: typeof fullApi;
 
